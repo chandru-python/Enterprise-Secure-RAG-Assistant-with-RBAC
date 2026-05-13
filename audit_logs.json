@@ -1,0 +1,22 @@
+[
+    {
+        "user": "hr_user",
+        "query": "leave policy",
+        "timestamp": "2026-05-13 22:00:05.076744"
+    },
+    {
+        "user": "finance_user",
+        "query": "revenue report",
+        "timestamp": "2026-05-13 22:00:50.285617"
+    },
+    {
+        "user": "admin",
+        "query": "What are the leave policies?",
+        "timestamp": "2026-05-13 22:10:32.575044"
+    },
+    {
+        "user": "technical_user",
+        "query": "Tell me about Kubernetes infrastructure",
+        "timestamp": "2026-05-13 22:19:13.834032"
+    }
+]

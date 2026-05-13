@@ -1,0 +1,20 @@
+Employees are entitled to 17 paid leaves annually.
+Performance reviews occur every 10 months.
+Employees are entitled to 5 paid leaves annually.
+Performance reviews occur every 28 months.
+Remote work is allowed 12 days per week.
+Employees receive 23 bonus during appraisal.
+Medical insurance covers 30 family members.
+Employees receive 30 bonus during appraisal.
+Medical insurance covers 10 family members.
+Remote work is allowed 6 days per week.
+Medical insurance covers 9 family members.
+Remote work is allowed 5 days per week.
+Performance reviews occur every 2 months.
+Employees receive 25 bonus during appraisal.
+Performance reviews occur every 8 months.
+Performance reviews occur every 12 months.
+Employees are entitled to 5 paid leaves annually.
+Employees are entitled to 26 paid leaves annually.
+Medical insurance covers 30 family members.
+Performance reviews occur every 6 months.
