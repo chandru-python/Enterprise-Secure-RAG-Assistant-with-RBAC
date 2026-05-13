@@ -1,69 +1,99 @@
-# Enterprise Secure RAG Assistant
+# 🚀 Enterprise Secure RAG Assistant with RBAC
 
-## Overview
+<p align="center">
 
-Enterprise Secure RAG Assistant is a production-style AI-powered Retrieval-Augmented Generation (RAG) system designed for enterprise environments.  
+<img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python"/>
 
-The system retrieves accurate information from multiple disconnected enterprise data sources while enforcing strict Role-Based Access Control (RBAC).
+<img src="https://img.shields.io/badge/FastAPI-Backend-green?style=for-the-badge&logo=fastapi"/>
 
-The application supports semantic search, grounded response generation, explainability, and secure access management across enterprise datasets.
+<img src="https://img.shields.io/badge/Streamlit-Frontend-red?style=for-the-badge&logo=streamlit"/>
 
----
+<img src="https://img.shields.io/badge/LangChain-RAG-yellow?style=for-the-badge"/>
 
-# Features
+<img src="https://img.shields.io/badge/FAISS-VectorDB-purple?style=for-the-badge"/>
 
-- Multi-format enterprise data ingestion
-- Semantic document retrieval using FAISS
-- Role-Based Access Control (RBAC)
-- FastAPI backend
-- Streamlit frontend
-- Explainable AI responses
-- Source citations
-- Confidence score display
-- Audit logging
-- Enterprise-style UI
-- Multi-source reasoning
+<img src="https://img.shields.io/badge/AI-Enterprise-black?style=for-the-badge"/>
+
+</p>
 
 ---
 
-# Technologies Used
+# 📌 Overview
 
-| Technology | Purpose |
+Enterprise Secure RAG Assistant is a **production-style AI-powered Retrieval-Augmented Generation (RAG) system** designed for enterprise environments.
+
+The system retrieves accurate information from multiple disconnected enterprise data sources while enforcing strict **Role-Based Access Control (RBAC)**.
+
+It supports:
+- 🔍 Semantic Search
+- 🛡️ Secure Access Control
+- 📄 Multi-source Retrieval
+- 🧠 Grounded AI Responses
+- 📊 Explainability & Citations
+- ⚡ Enterprise-grade Architecture
+
+---
+
+# ✨ Features
+
+✅ Multi-format enterprise data ingestion  
+✅ Semantic document retrieval using FAISS  
+✅ Role-Based Access Control (RBAC)  
+✅ FastAPI backend API  
+✅ Streamlit frontend UI  
+✅ Explainable AI responses  
+✅ Source citations & traceability  
+✅ Confidence score display  
+✅ Audit logging system  
+✅ Multi-source enterprise reasoning  
+✅ Enterprise-style responsive interface  
+
+---
+
+# 🛠️ Technologies Used
+
+| 🚀 Technology | 📌 Purpose |
 |---|---|
-| Python | Core programming language |
+| Python 3.11 | Core Programming |
 | FastAPI | Backend API |
 | Streamlit | Frontend UI |
-| LangChain | RAG pipeline |
-| FAISS | Vector database |
-| Sentence Transformers | Text embeddings |
-| Pandas | CSV processing |
-| JSON | Log processing |
+| LangChain | RAG Pipeline |
+| FAISS | Vector Database |
+| Sentence Transformers | Embedding Model |
+| Pandas | CSV Processing |
+| JSON | Log Processing |
+| Torch | Deep Learning Backend |
 
 ---
 
-# Project Architecture
+# 🏗️ Project Architecture
 
 ```text
-User
-  ↓
-Streamlit Frontend
-  ↓
-FastAPI Backend
-  ↓
-Authentication + RBAC
-  ↓
-FAISS Vector Database
-  ↓
-Semantic Retrieval
-  ↓
-Grounded Response Generation
-  ↓
-Answer + Citations
+                User Query
+                     ↓
+          Streamlit Frontend UI
+                     ↓
+             FastAPI Backend
+                     ↓
+         Authentication + RBAC
+                     ↓
+            LangChain Pipeline
+                     ↓
+            FAISS Vector Search
+                     ↓
+       Enterprise Dataset Sources
+        (TXT / CSV / JSON Files)
+                     ↓
+      Grounded Response Generation
+                     ↓
+     Explainable AI + Citations
+                     ↓
+              Final Response
 ```
 
 ---
 
-# Folder Structure
+# 📂 Folder Structure
 
 ```text
 enterprise-rag/
@@ -93,92 +123,83 @@ enterprise-rag/
 
 ---
 
-# Dataset Details
+# 📊 Dataset Details
 
 The project uses synthetic enterprise datasets consisting of:
 
-- 500 TXT documents
-- 500 CSV rows
-- 500 JSON log records
+📄 500 TXT Documents  
+📈 500 CSV Records  
+🧾 500 JSON Security Logs  
 
-### Data Categories
+### 📌 Data Categories
 
-- HR policies
-- Finance reports
-- Technical infrastructure
-- Security logs
-- Operational records
+- 🏢 HR Policies
+- 💰 Finance Reports
+- ⚙️ Technical Infrastructure
+- 🔐 Security Logs
+- 📋 Operational Records
 
 ---
 
-# Role-Based Access Control
+# 🔐 Role-Based Access Control (RBAC)
 
-| Role | Access |
+| 👤 Role | 🔓 Access |
 |---|---|
-| Admin | All documents |
-| HR User | HR documents |
-| Finance User | Finance documents |
-| Technical User | Technical documents |
-| Employee | Restricted access |
+| Admin | Full Access |
+| HR User | HR Documents |
+| Finance User | Finance Reports |
+| Technical User | Technical Documents |
+| Employee | Restricted Access |
 
 ---
 
-# Installation
+# ⚙️ Installation
 
-## Clone Project
+## 📥 Clone Repository
 
 ```bash
-git clone <repository_url>
-cd enterprise-rag
+git clone https://github.com/chandru-python/Enterprise-Secure-RAG-Assistant-with-RBAC.git
+
+cd Enterprise-Secure-RAG-Assistant-with-RBAC
 ```
 
 ---
 
-# Install Dependencies
+# 📦 Install Dependencies
 
 ```bash
-py -3.11 -m pip install fastapi
-py -3.11 -m pip install uvicorn
-py -3.11 -m pip install streamlit
-py -3.11 -m pip install langchain==0.2.16
-py -3.11 -m pip install langchain-community==0.2.16
-py -3.11 -m pip install sentence-transformers==2.7.0
-py -3.11 -m pip install transformers==4.41.2
-py -3.11 -m pip install faiss-cpu
-py -3.11 -m pip install pandas
-py -3.11 -m pip install torch
+py -3.11 -m pip install -r requirements.txt
 ```
 
 ---
 
-# Generate Vector Database
-
-Run:
+# 🧠 Generate Vector Database
 
 ```bash
 py -3.11 ingest.py
 ```
 
 This will:
-- Load enterprise datasets
-- Create embeddings
-- Build FAISS vector database
+
+✅ Load enterprise datasets  
+✅ Generate embeddings  
+✅ Build FAISS vector database  
 
 ---
 
-# Run Backend
+# 🚀 Run Backend
 
 ```bash
 py -3.11 -m uvicorn app:app --reload
 ```
 
-Backend URL:
+## 🌐 Backend URL
 
 ```text
 http://127.0.0.1:8000
 ```
 
-Swagger API Docs:
+## 📑 Swagger API Docs
 
 ```text
 http://127.0.0.1:8000/docs
@@ -186,14 +207,15 @@ http://127.0.0.1:8000/docs
 
 ---
 
-# Run Frontend
+# 💻 Run Frontend
 
 ```bash
 cd frontend
+
 py -3.11 -m streamlit run streamlit_app.py
 ```
 
-Frontend URL:
+## 🌐 Frontend URL
 
 ```text
 http://localhost:8501
@@ -201,9 +223,9 @@ http://localhost:8501
 
 ---
 
-# Sample Login Credentials
+# 👨‍💻 Sample Login Credentials
 
-| Username | Password | Role |
+| 👤 Username | 🔑 Password | 🛡️ Role |
 |---|---|---|
 | admin | admin123 | Admin |
 | hr_user | hr123 | HR |
@@ -213,27 +235,27 @@ http://localhost:8501
 
 ---
 
-# Example Queries
+# 🔍 Example Queries
 
-## HR
+## 🏢 HR
 
 ```text
 What is leave policy?
 ```
 
-## Finance
+## 💰 Finance
 
 ```text
 Show Q1 revenue report
 ```
 
-## Technical
+## ⚙️ Technical
 
 ```text
 What is server downtime threshold?
 ```
 
-## Security
+## 🔐 Security
 
 ```text
 Show security logs
@@ -241,43 +263,51 @@ Show security logs
 
 ---
 
-# System Workflow
+# 🔄 System Workflow
 
-1. User logs into the system
-2. Query is submitted
-3. RBAC validates access
-4. FAISS retrieves relevant documents
-5. RAG pipeline generates grounded response
-6. Sources and confidence scores are displayed
-
----
-
-# Key Highlights
-
-- Enterprise-grade AI retrieval system
-- Secure document access
-- Semantic similarity search
-- Explainable AI responses
-- Multi-format data support
-- Production-style architecture
+1️⃣ User logs into the system  
+2️⃣ Query submitted through frontend  
+3️⃣ RBAC validates user access  
+4️⃣ FAISS retrieves relevant documents  
+5️⃣ LangChain RAG pipeline processes context  
+6️⃣ Grounded response generated  
+7️⃣ Sources & confidence scores displayed  
 
 ---
 
-# Future Enhancements
+# 🌟 Key Highlights
 
-- OpenAI GPT integration
-- OCR document support
-- JWT authentication
-- Hybrid search
-- ChromaDB integration
-- Docker deployment
-- Cloud hosting
-- Real-time chat memory
+🚀 Enterprise-grade AI retrieval system  
+🛡️ Secure document access with RBAC  
+🔍 Semantic similarity search  
+📄 Explainable AI responses  
+📊 Source traceability & citations  
+⚡ Production-style architecture  
+🧠 Context-aware retrieval pipeline  
 
 ---
 
-# Author
+# 🔮 Future Enhancements
 
-Chandru
+- 🤖 OpenAI GPT Integration
+- 📸 OCR Document Support
+- 🔑 JWT Authentication
+- ⚡ Hybrid Search
+- 🧠 ChromaDB Integration
+- 🐳 Docker Deployment
+- ☁️ Cloud Hosting
+- 💬 Real-time Chat Memory
 
-AI/ML Engineer | RAG | LLM | Computer Vision | FastAPI
+---
+
+# 👨‍💻 Author
+
+# Chandru
+
+AI/ML Engineer | RAG | LLM | FastAPI | Generative AI | Computer Vision
+
+---
+
+# ⭐ If you like this project
+
+Give it a ⭐ on GitHub and connect with me on LinkedIn 🚀
